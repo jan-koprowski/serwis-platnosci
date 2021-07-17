@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pick type of Payment</title>
+</head>
+<body>
+    {% block content %}
+
+    <h1><a href="{% url 'allReports' %}">All Reports</a></h1>
+
+    <h1><a href="{% url 'add_reports' %}">Add Payment</a></h1>
+
+    <h1><a href="{% url 'add_reports_ID' %}">Add Payment with Customer ID</a></h1>
+
+    {% endblock %}
+
+</body>
+</html>

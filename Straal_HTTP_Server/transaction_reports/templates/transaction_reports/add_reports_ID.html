@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pick type of Payment</title>
+</head>
+<body>
+    {% block content %}
+        <h1>Pick type of payment</h1>
+
+    <ul>
+        <li>
+            <a href="{% url 'AddReportPblID' %}">Pay by link</a>
+        </li>
+        <br>
+        <li>
+            <a href="{% url 'AddReportDpID' %}">Direct Payment</a>
+        </li>
+        <br>
+        <li>
+            <a href="{% url 'AddReportCardID' %}">Card</a>
+        </li>
+    </ul>
+    {% endblock %}
+
+</body>
+</html>
